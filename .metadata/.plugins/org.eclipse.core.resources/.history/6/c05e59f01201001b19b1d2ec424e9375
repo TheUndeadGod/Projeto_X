@@ -1,0 +1,24 @@
+package com.grgames.entities;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Entity {
+
+	private double x, y;
+	
+	public Entity() {
+		
+	}
+	
+	public void tick() {
+		
+	}
+	
+	public void render(Graphics g) {
+		
+		g.setColor(Color.WHITE);
+		g.fillOval((int) x, (int) y, 60, 60);
+	}
+	
+}

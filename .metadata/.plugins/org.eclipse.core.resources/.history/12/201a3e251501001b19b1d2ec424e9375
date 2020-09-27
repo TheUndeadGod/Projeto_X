@@ -1,0 +1,5 @@
+package com.grgames.world;
+
+public class Camera {
+
+}

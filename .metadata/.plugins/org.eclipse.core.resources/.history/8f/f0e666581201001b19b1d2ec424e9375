@@ -1,0 +1,5 @@
+package com.grgames.entities;
+
+public class Entity {
+
+}

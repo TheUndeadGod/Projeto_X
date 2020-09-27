@@ -1,0 +1,31 @@
+package com.grgames.entities;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+public class Entity {
+
+	private double x, y;
+	private int width, heigth;
+	private BufferedImage sprite;
+	
+	public Entity(double x, double y, int width, int height, BufferedImage sprite) {
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.heigth = height;
+		this.sprite = sprite;
+	}
+	
+	public void tick() {
+		
+	}
+	
+	public void render(Graphics g) {
+		
+		g.setColor(Color.WHITE);
+		g.fillOval((int) x, (int) y, width, heigth);
+	}
+	
+}
