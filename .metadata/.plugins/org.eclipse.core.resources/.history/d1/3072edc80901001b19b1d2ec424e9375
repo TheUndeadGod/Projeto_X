@@ -1,0 +1,59 @@
+package com.grgames.main;
+
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.JFrame;
+
+public class Game extends Canvas implements KeyListener {
+
+	private static final long serialVersionUID = -5309707430436861883L;
+
+	private JFrame jframe;
+	
+	public Game() {
+		this.setPreferredSize(new Dimension(200, 200));
+		initFrame();
+	}
+	
+	public static void main(String[] args) {
+		Game game = new Game();
+	}
+	
+	// Inicia o JFrame.
+	public void initFrame() {
+		jframe = new JFrame("Projeto X");
+		jframe.add(this);
+		jframe.setVisible(true);
+		jframe.setResizable(false);
+		jframe.setLocationRelativeTo(null);
+		jframe.pack();
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	/*
+	 * -- Inico dos métodos KeyListener.
+	 */
+	
+	@Override
+	public void keyPressed(KeyEvent arg0) {
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent arg0) {
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		
+	}
+	
+	/*
+	 * -- Final dos métodos KeyListener.
+	 */
+
+}
